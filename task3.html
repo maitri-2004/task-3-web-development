@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task 3 – ApexPlanet</title>
+  <link rel="stylesheet" href="task3.css" />
+</head>
+<body>
+  <header>
+    <h1>Advanced Styling & JavaScript</h1>
+    <p>Responsive Design | Carousel | API Integration</p>
+  </header>
+
+  <main>
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+      <h2>Image Carousel</h2>
+      <div class="carousel" aria-label="Image Carousel">
+        <button class="nav left" aria-label="Previous image" onclick="navigateCarousel(-1)">&#10094;</button>
+        <img id="carouselImage" src="" alt="Slideshow image" />
+        <button class="nav right" aria-label="Next image" onclick="navigateCarousel(1)">&#10095;</button>
+      </div>
+      <div id="carouselIndicators" class="indicators"></div>
+    </section>
+
+    <!-- API Section -->
+    <section class="api-section">
+      <h2>Programming Joke</h2>
+      <div id="jokeBox" class="joke-box" aria-live="polite">Click below to load a programming joke.</div>
+      <button class="primary-btn" onclick="fetchJoke()">Get Joke</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ApexPlanet Internship – Task 3</p>
+  </footer>
+
+  <script src="task3.js" defer></script>
+</body>
+</html>
+
